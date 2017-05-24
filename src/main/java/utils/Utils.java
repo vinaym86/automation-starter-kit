@@ -77,7 +77,7 @@ public enum Browser {
   }
 	// method to select the needed browser
 	public static DesiredCapabilities getBrowserInstance(String browserName) {
-	    String value; // assume input
+	    String value=""; // assume input
         Browser browser = Browser.valueOf(value); 
 		switch (browser) {
 		case FIREFOX: {
