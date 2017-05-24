@@ -69,23 +69,30 @@ public class Utils {
 		}
 		return selectedItem;
 	}
+public enum Browser {
 
+    FIREFOX,
+    IE,
+    CHROME
+  }
 	// method to select the needed browser
 	public static DesiredCapabilities getBrowserInstance(String browserName) {
-		switch (browserName) {
-		case "firefox": {
+	    String value; // assume input
+        Browser browser = Browser.valueOf(value); 
+		switch (browser) {
+		case FIREFOX: {
 			DesiredCapabilities capability = DesiredCapabilities.firefox();
 			FirefoxProfile firefoxProfile = new FirefoxProfile();
 			capability.setCapability(FirefoxDriver.PROFILE, firefoxProfile);
 			return capability;
 		}
-		case "ie": {
+		case IE: {
 			//System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
 			DesiredCapabilities capability = DesiredCapabilities
 					.internetExplorer();
 			return capability;
 		}
-		case "chrome": {
+		case CHROME: {
 			// System.setProperty("webdriver.chrome.driver",
 			//		"c:\\chromedriver.exe");
 			DesiredCapabilities capability = DesiredCapabilities.chrome();
