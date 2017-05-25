@@ -8,7 +8,7 @@
 		<parameters>
 			<parameter name="browser" value="chrome" />
 			<parameter name="port" value="5555" />
-			<parameter name="ipAddress" value="localhost" />
+			<parameter name="ipAddress" value="52.170.32.146" />
 			<parameter name="user" value="user1" />
 			<parameter name="environment" value="stage" />
 		</parameters>
@@ -20,7 +20,7 @@
 		<parameters>
 			<parameter name="browser" value="chrome" />
 			<parameter name="port" value="5555" />
-			<parameter name="ipAddress" value="localhost" />
+			<parameter name="ipAddress" value="52.170.32.146" />
 			<parameter name="user" value="user2" />
 			<parameter name="environment" value="stage" />
 		</parameters>
@@ -32,7 +32,7 @@
 		<parameters>
 			<parameter name="browser" value="chrome" />
 			<parameter name="port" value="5555" />
-			<parameter name="ipAddress" value="localhost" />
+			<parameter name="ipAddress" value="52.170.32.146" />
 			<parameter name="user" value="user3" />
 			<parameter name="environment" value="stage" />
 		</parameters>
